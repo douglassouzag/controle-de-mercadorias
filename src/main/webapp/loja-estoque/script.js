@@ -11,6 +11,14 @@ function onFormSubmit() {
     }
 }
 
+function chamarTelaEstoque(){
+    window.location.href = "index.html";
+}
+
+function chamarTelaLoja(){
+    window.location.href = "loja.html";
+} 
+
 function readFormData() {
     var formData = {};
     formData["produto"] = document.getElementById("produto").value;
