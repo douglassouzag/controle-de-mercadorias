@@ -44,6 +44,25 @@ function insertNewRecord(data) {
                        <a onClick="onDelete(this)">Deletar</a>`;
 }
 
+function Adicionar() {
+    alert("RELATÓRIO DA COMPRA  \n\n 1. NESCAU – Preço unitário: R$3,00 \n QUANTIDADE: 10 \n Valor: R$ 300,00 \n\n  2. TODDY preço unitário: R$7,00 \nQUANTIDADE: 150 \n Valor: R$1050,00 \n\n TOTAL R$ 1.350,00");
+}
+
+function insertNewCompra(data) {
+    var table = document.getElementById("produtos").getElementsByTagName('tbody')[0];
+    var newRow = table.insertRow(table.length);
+    cell1 = newRow.insertCell(0);
+    cell1.innerHTML = data.produto;
+    cell2 = newRow.insertCell(1);
+    cell2.innerHTML = data.desc;
+    cell3 = newRow.insertCell(2);
+    cell3.innerHTML = data.preco;
+    cell4 = newRow.insertCell(3);
+    cell4.innerHTML = data.quantidade;
+    cell4 = newRow.insertCell(4);
+    cell4.innerHTML = ` <a onClick="onComprar(this)">Comprar</a>`;
+}
+
 function resetForm() {
     document.getElementById("produto").value = "";
     document.getElementById("desc").value = "";
@@ -73,6 +92,12 @@ function onDelete(td) {
         resetForm();
     }
 }
+
+function onComprar(td) {
+    if (confirm('Tem certeza que deseja comprar esse produto?')) {
+    }
+}
+
 function validate() {
     isValid = true;
     if (document.getElementById("produto").value == "") {
