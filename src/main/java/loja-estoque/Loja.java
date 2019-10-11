@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.WebServlet;
 import java.io.PrintWriter;
 
-@WebServlet(urlPatterns={"/index", "/estoque"})
+@WebServlet(urlPatterns={"/loja"})
 
 public class App extends HttpServlet {
     public void doGet (HttpServletRequest req, HttpServletResponse res) {
