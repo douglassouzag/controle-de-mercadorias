@@ -12,11 +12,11 @@ function onFormSubmit() {
 }
 
 function chamarTelaEstoque(){
-    window.location.href = "index.html";
+    window.location.href = "estoque";
 }
 
 function chamarTelaLoja(){
-    window.location.href = "loja.html";
+    window.location.href = "loja";
 } 
 
 function readFormData() {
