@@ -44,8 +44,8 @@ function insertNewRecord(data) {
                        <a onClick="onDelete(this)">Deletar</a>`;
 }
 
-function Adicionar() {
-    alert("RELATÓRIO DA COMPRA  \n\n 1. NESCAU – Preço unitário: R$3,00 \n QUANTIDADE: 10 \n Valor: R$ 300,00 \n\n  2. TODDY preço unitário: R$7,00 \nQUANTIDADE: 150 \n Valor: R$1050,00 \n\n TOTAL R$ 1.350,00");
+function relatorio() {
+    alert("RELATÓRIO DA COMPRA  \n\n1. Arroz – Preço unitário: R$5,00 \nQUANTIDADE: 2 \nValor: R$ 10,00 \n\n2. Farinha - preço unitário: R$ 2,00 \nQUANTIDADE: 4 \nValor: R$ 8,00 \n\nTOTAL R$ 18,00");
 }
 
 function insertNewCompra(data) {
